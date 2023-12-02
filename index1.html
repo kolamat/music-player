@@ -127,6 +127,17 @@
         opacity: 1;
       } */
     </style> -->
-    <script src="index.js"></script>
+    <script>
+      let countEl = document.getElementById("count-el"); // pass in arguments
+
+      console.log(countEl);
+
+      let count = 0;
+
+      function increment() {
+        count = count + 1;
+        countEl.innerText = count;
+      }
+    </script>
   </body>
 </html>

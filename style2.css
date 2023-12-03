@@ -28,8 +28,19 @@ button {
 
 #increment-btn {
   background: rgb(2, 93, 121);
+  border-radius: 0 9px;
 }
 
 #save-btn {
   background: rgb(6, 81, 6);
+  border-radius: 9px 0;
+}
+
+@media (max-width: 421px) {
+  div {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    color: blue;
+  }
 }

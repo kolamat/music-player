@@ -138,7 +138,7 @@
 
       function increment() {
         count = count + 1;
-        countEl.innerText = count;
+        countEl.textContent = count;
       }
 
       function save() {
@@ -166,13 +166,13 @@
 
       let welcomeEl = document.getElementById("welcome-el");
 
-      welcomeEl.innerText = greeting + name;
+      welcomeEl.textContent = greeting + name;
 
       // Add an emoji to the end! 👋
       // WRITE YOUR CODE BELOW HERE
       // HINT: count = count + 1
 
-      welcomeEl.innerText += "👋";
+      welcomeEl.textContent += "👋";
 
       // 1. Grab the save-el paragrah and store it in a variable called saveEl
       let saveEl = document.getElementById("save-el");
@@ -183,14 +183,15 @@
 
       function increment() {
         count += 1;
-        countEl.innerText = count;
+        countEl.textContent = count;
       }
 
       function save() {
         let countStr = count + " - ";
         // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
         // 3. Render the variable in the saveEl using innerText
-        saveEl.innerText += countStr;
+        /* so instead of the innertext keyword there is also textcontent*/
+        saveEl.textContent += countStr;
         // NB: Make sure to not delete the existing content of the paragraph
         console.log(count);
       }

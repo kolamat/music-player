@@ -4,6 +4,12 @@ body {
   text-align: center;
 }
 
+.b-img {
+  background-image: url(315758148_716189799840385_17496892218082876_n.jpg);
+  background-size: contain;
+  filter: blur(8px);
+}
+
 h1 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -38,9 +44,6 @@ button {
 
 @media (max-width: 421px) {
   div {
-    display: flex;
-    flex-direction: column;
-    /* text-align: center; */
     color: blue;
   }
 }

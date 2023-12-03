@@ -129,11 +129,11 @@
       } */
     </style> -->
     <script>
-      let countEl = document.getElementById("count-el"); // pass in arguments
+      /*let countEl = document.getElementById("count-el");*/ // pass in arguments
 
       //   console.log(countEl);
 
-      let count = 0;
+      /*let count = 0;*/
 
       function increment() {
         count = count + 1;
@@ -152,7 +152,8 @@
       console.log(messageToUser);
 
       // Grab the welcome-el paragraph and store it in a variable called welcomeEl
-      let welcomeEl = document.getElementById("welcome-el");
+
+      /*let welcomeEl = document.getElementById("welcome-el");*/
 
       // Create two variables (name & greeting) that contains your name
       // and the greeting we want to render on the page
@@ -161,7 +162,7 @@
       let greeting = "Welcome back ";
 
       // Render the welcome message using welcomeEl.innerText
-      welcomeEl.innerText = greeting + name;
+
       let welcomeEl = document.getElementById("welcome-el");
 
       welcomeEl.innerText = greeting + name;
@@ -171,6 +172,27 @@
       // HINT: count = count + 1
 
       welcomeEl.innerText += "👋";
+
+      // 1. Grab the save-el paragrah and store it in a variable called saveEl
+      let saveEl = document.getElementById("save-el");
+      let countEl = document.getElementById("count-el");
+      let count = 0;
+
+      console.log(saveEl);
+
+      function increment() {
+        count += 1;
+        countEl.innerText = count;
+      }
+
+      function save() {
+        let countStr = count + " - ";
+        // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
+        // 3. Render the variable in the saveEl using innerText
+        saveEl.innerText += countStr;
+        // NB: Make sure to not delete the existing content of the paragraph
+        console.log(count);
+      }
     </script>
   </body>
 </html>

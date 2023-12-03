@@ -136,7 +136,7 @@
 
       function increment() {
         count = count + 1;
-        countEl.textContent = count;
+        countEl.innerText = count;
       }
 
       function save() {
@@ -164,13 +164,13 @@
 
       let welcomeEl = document.getElementById("welcome-el");
 
-      welcomeEl.textContent = greeting + name;
+      welcomeEl.innerText = greeting + name;
 
       // Add an emoji to the end! 👋
       // WRITE YOUR CODE BELOW HERE
       // HINT: count = count + 1
 
-      welcomeEl.textContent += "👋";
+      welcomeEl.innerText += "👋";
 
       // 1. Grab the save-el paragrah and store it in a variable called saveEl
       let saveEl = document.getElementById("save-el");
@@ -190,6 +190,8 @@
         // 3. Render the variable in the saveEl using innerText
         /* so instead of the innertext keyword there is also textcontent*/
         saveEl.textContent += countStr;
+        countEl.textContent = 0;
+        count = 0;
         // NB: Make sure to not delete the existing content of the paragraph
         console.log(count);
       }

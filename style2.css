@@ -5,9 +5,9 @@ body {
 }
 
 .b-img {
-  background-image: url(315758148_716189799840385_17496892218082876_n.jpg);
+  background-image: url(7X0hQc.jpg);
   background-size: contain;
-  filter: blur(8px);
+  color: rgb(244, 247, 255);
 }
 
 h1 {
@@ -43,7 +43,7 @@ button {
 }
 
 @media (max-width: 421px) {
-  div {
+  .b-img {
     color: blue;
   }
 }

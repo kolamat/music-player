@@ -29,6 +29,7 @@ h2 {
 
 #save-el {
   text-transform: capitalize;
+  font: bold;
 }
 
 button {
@@ -50,14 +51,4 @@ button {
 #save-btn {
   background: rgb(6, 81, 6);
   border-radius: 9px 0;
-}
-
-@media (max-width: 421px) {
-  body {
-    height: 100vh;
-  }
-
-  .container {
-    color: rgb(212, 212, 227);
-  }
 }

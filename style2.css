@@ -2,23 +2,33 @@ body {
   font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-align: center;
+  background-image: url(7X0hQc.jpg);
+  height: 100vh;
 }
 
-.b-img {
-  background-image: url(7X0hQc.jpg);
-  background-size: contain;
+.container {
+  background: black;
+  margin: auto;
+  border: 2px white solid;
+  width: 90%;
   color: rgb(244, 247, 255);
 }
 
 h1 {
   margin-top: 10px;
   margin-bottom: 10px;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 
 h2 {
   font-size: 50px;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+#save-el {
+  text-transform: capitalize;
 }
 
 button {
@@ -43,7 +53,11 @@ button {
 }
 
 @media (max-width: 421px) {
-  .b-img {
-    color: blue;
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    color: rgb(212, 212, 227);
   }
 }

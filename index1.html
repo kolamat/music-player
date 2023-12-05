@@ -17,7 +17,7 @@
       alt="Nike shoe"
     />
     <p>Nike shoe</p>
-    <button onclick="purchase()">Purchase - $149</button>
+    <button class="button" onclick="purchase()">Purchase - $149</button>
     <p id="error"></p>
 
     <style>
@@ -47,6 +47,17 @@
         width: 200px;
         margin-bottom: 5px;
         border-radius: 5px;
+      }
+
+      .button {
+        background: white;
+        color: black;
+        margin-top: 10px;
+        border: 1px solid black;
+        padding: 10px 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 20px;
       }
 
       #increment-btn {
@@ -209,6 +220,18 @@
         count = 0;
         // NB: Make sure to not delete the existing content of the paragraph
         console.log(count);
+      }
+
+      // When the user clicks the purchase button, render out
+      // "Something went wrong, please try again" in the paragraph
+      // that has the id="error".
+
+      let errorParagraph = document.getElementById("error");
+      console.log(errorParagraph);
+
+      function purchase() {
+        console.log("button clicked");
+        errorParagraph.textContent = "Something went wrong, please try again";
       }
     </script>
   </body>

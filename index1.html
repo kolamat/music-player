@@ -12,6 +12,11 @@
     <button id="increment-btn" onclick="increment()">INCREMENT</button>
     <button id="save-btn" onclick="save()">SAVE</button>
     <p id="save-el">Previous-entires:</p>
+    <img src="images/shoe.jpeg" alt="Nike shoe" />
+    <p>Nike shoe</p>
+    <button onclick="purchase()">Purchase - $149</button>
+    <p id="error"></p>
+    <script src="index.js"></script>
 
     <style>
       body {
@@ -48,6 +53,14 @@
 
       #save-btn {
         background: darkgreen;
+      }
+      #error {
+        color: red;
+        font-weight: 200;
+      }
+      img {
+        width: 200px;
+        display: block;
       }
     </style>
     <!-- 
